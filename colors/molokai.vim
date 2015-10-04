@@ -151,6 +151,10 @@ hi WildMenu        guifg=#66D9EF guibg=#000000
 hi TabLineFill     guifg=#1B1D1E guibg=#1B1D1E
 hi TabLine         guibg=#1B1D1E guifg=#808080 gui=none
 
+" Highlights for vim-indent-guides
+hi IndentGuidesOdd               guibg=#1C1C1C
+hi IndentGuidesEven              guibg=#262626
+
 if s:molokai_original == 1
    hi Normal          guifg=#F8F8F2 guibg=#272822
    hi Comment         guifg=#75715E
@@ -288,6 +292,10 @@ if &t_Co > 255
    hi NonText         ctermfg=59
 
    hi SpecialKey      ctermfg=59
+
+   " Highlights for vim-indent-guides
+   hi IndentGuidesOdd             ctermbg=234
+   hi IndentGuidesEven            ctermbg=235
 
    if exists("g:rehash256") && g:rehash256 == 1
        hi Normal       ctermfg=252 ctermbg=234
