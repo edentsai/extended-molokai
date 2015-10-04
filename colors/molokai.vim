@@ -162,6 +162,12 @@ hi SignifySignChange   guifg=#FFFF5F guibg=#232526 gui=bold
 hi link SignifySignChangeDelete    SignifySignChange
 hi link SignifySignDeleteFirstLine SignifySignDelete
 
+" Highlights for csv.vim
+hi CSVColumnHeaderOdd                guibg=#1C1C1C gui=bold
+hi CSVColumnHeaderEven               guibg=#303030 gui=bold
+hi CSVColumnOdd                      guibg=#1C1C1C
+hi CSVColumnEven                     guibg=#303030
+
 if s:molokai_original == 1
    hi Normal          guifg=#F8F8F2 guibg=#272822
    hi Comment         guifg=#75715E
@@ -310,6 +316,12 @@ if &t_Co > 255
    hi SignifySignChange   ctermfg=227 ctermbg=235  cterm=bold
    hi link SignifySignChangeDelete    SignifySignChange
    hi link SignifySignDeleteFirstLine SignifySignDelete
+
+   " Highlights for csv.vim
+   hi CSVColumnHeaderOdd             ctermbg=234    cterm=bold
+   hi CSVColumnHeaderEven            ctermbg=236    cterm=bold
+   hi CSVColumnOdd                   ctermbg=234
+   hi CSVColumnEven                  ctermbg=236
 
    if exists("g:rehash256") && g:rehash256 == 1
        hi Normal       ctermfg=252 ctermbg=234
