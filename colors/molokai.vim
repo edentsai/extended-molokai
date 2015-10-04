@@ -181,14 +181,17 @@ if &t_Co > 255
       hi Normal                   ctermbg=234
       hi CursorLine               ctermbg=235   cterm=none
       hi CursorLineNr ctermfg=208               cterm=none
+      hi CursorColumn             ctermbg=235
    elseif s:molokai_transparent == 1
       hi Normal       ctermfg=252 ctermbg=none
       hi CursorLine               ctermbg=234   cterm=none
       hi CursorLineNr ctermfg=208               cterm=none
+      hi CursorColumn             ctermbg=234
    else
       hi Normal       ctermfg=252 ctermbg=233
       hi CursorLine               ctermbg=234   cterm=none
       hi CursorLineNr ctermfg=208               cterm=none
+      hi CursorColumn             ctermbg=234
    endif
    hi Boolean         ctermfg=135
    hi Character       ctermfg=144
@@ -280,7 +283,6 @@ if &t_Co > 255
    hi WildMenu        ctermfg=81  ctermbg=16
 
    hi Comment         ctermfg=59
-   hi CursorColumn                ctermbg=236
    hi ColorColumn                 ctermbg=236
    hi LineNr          ctermfg=250 ctermbg=236
    hi NonText         ctermfg=59
