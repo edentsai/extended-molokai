@@ -92,10 +92,10 @@ hi MoreMsg         guifg=#E6DB74
 hi Operator        guifg=#F92672
 
 " complete menu
-hi Pmenu           guifg=#66D9EF guibg=#000000
-hi PmenuSel                      guibg=#808080
-hi PmenuSbar                     guibg=#080808
-hi PmenuThumb      guifg=#66D9EF
+hi Pmenu           guifg=#66D9EF guibg=#303030
+hi PmenuSel        guifg=#FD971F guibg=#262626
+hi PmenuSbar                     guibg=#1C1C1C
+hi PmenuThumb      guifg=#66D9EF guibg=#FF8700
 
 hi PreCondit       guifg=#A6E22E               gui=bold
 hi PreProc         guifg=#A6E22E
@@ -242,10 +242,10 @@ if &t_Co > 255
    hi Operator        ctermfg=161
 
    " complete menu
-   hi Pmenu           ctermfg=81  ctermbg=16
-   hi PmenuSel        ctermfg=255 ctermbg=242
-   hi PmenuSbar                   ctermbg=232
-   hi PmenuThumb      ctermfg=81
+   hi Pmenu           ctermfg=81  ctermbg=236
+   hi PmenuSel        ctermfg=208 ctermbg=235
+   hi PmenuSbar                   ctermbg=234
+   hi PmenuThumb      ctermfg=81  ctermbg=208
 
    hi PreCondit       ctermfg=118               cterm=bold
    hi PreProc         ctermfg=118
