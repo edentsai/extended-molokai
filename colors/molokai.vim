@@ -155,6 +155,13 @@ hi TabLine         guibg=#1B1D1E guifg=#808080 gui=none
 hi IndentGuidesOdd               guibg=#1C1C1C
 hi IndentGuidesEven              guibg=#262626
 
+" Highlights for vim-signify
+hi SignifySignAdd      guifg=#87FF5F guibg=#232526 gui=bold
+hi SignifySignDelete   guifg=#D75F5F guibg=#232526 gui=bold
+hi SignifySignChange   guifg=#FFFF5F guibg=#232526 gui=bold
+hi link SignifySignChangeDelete    SignifySignChange
+hi link SignifySignDeleteFirstLine SignifySignDelete
+
 if s:molokai_original == 1
    hi Normal          guifg=#F8F8F2 guibg=#272822
    hi Comment         guifg=#75715E
@@ -296,6 +303,13 @@ if &t_Co > 255
    " Highlights for vim-indent-guides
    hi IndentGuidesOdd             ctermbg=234
    hi IndentGuidesEven            ctermbg=235
+
+   " Highlights for vim-signify
+   hi SignifySignAdd      ctermfg=119 ctermbg=235  cterm=bold
+   hi SignifySignDelete   ctermfg=167 ctermbg=235  cterm=bold
+   hi SignifySignChange   ctermfg=227 ctermbg=235  cterm=bold
+   hi link SignifySignChangeDelete    SignifySignChange
+   hi link SignifySignDeleteFirstLine SignifySignDelete
 
    if exists("g:rehash256") && g:rehash256 == 1
        hi Normal       ctermfg=252 ctermbg=234
